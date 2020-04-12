@@ -46,12 +46,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
  } //was updated to code for percentage dengue and malaria, not cold and allergies
 function resultPercentage() {
-	var malariaPercentage = malaria_count /4 *100; // deleted "" added ; added multiple by 100
-	alert(malariaPercentage); // added for pop up box
-	var denguePercentage = dengue_count /4 *100; // delted "" added ; added = added multiple by 100
-	alert(denguePercentage); // added for pop up box
+	var covidPercentage = covid_count /4 *100; // deleted "" added ; added multiple by 100; updated for covid
+	alert(covidPercentage); // added for pop up box
+	var fluPercentage = flu_count /4 *100; // delted "" added ; added = added multiple by 100; updated to say flu
+	alert(fluPercentage); // added for pop up box
+	var coldPercentage = cold_count /4 *100; // delted "" added ; added = added multiple by 100; updated to say cold
+	alert(coldPercentage); // added for pop up box
+	var allergiesPercentage = allergies_count /4 *100; // delted "" added ; added = added multiple by 100; updated to say allergies
+	alert(allergiesPercentage); // added for pop up box
 	var resultText = document.getElementById("results");
-	resultText.innerHTML = "Percent it's likely malaria =" + malaria_count /4 *100 + "<br> Percent it's likely dengue fever =" + dengue_count /4 *100 ; // added () re did change divided by 6 multiplied by 100 added percent; changed it to percent likel; changed it to cold_count and allergy_count to signal it
+	resultText.innerHTML = "Percent it's likely covid =" + covid_count /4 *100 + "<br> Percent it's likely the flu =" + flu_count /4 *100 + "<br> Percent it's likely a cold =" + cold_count /4 *100 + "<br> Percent it's likely allergies =" + allergies_count /4 *100 ; // added () re did change divided by 6 multiplied by 100 added percent; changed it to percent likel; changed it to cold_count and allergy_count to signal it
 	
 	
 
@@ -95,7 +99,7 @@ img, object{
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have malaria or gange fever? Answer a few short questions to find out.</p> <!--changed to target the malaria vs gange question -->
+	<p>Are you feeling like you have you might be sick, but can't figure out whatit might be? Answer a few short questions to find out.</p> <!--changed to target the malaria vs gange question -->
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!--changed the button color to grey-->
 	
@@ -103,7 +107,7 @@ img, object{
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	<!--added picture of mosquito-->
-	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ancient_mosquito.jpg/1280px-Ancient_mosquito.jpg" alt="mosquito picture"> 
+	<img src="https://www.hilaryking.net/wp/wp-content/uploads/2017/06/Person%20sneezing.jpg" alt="coughing pic"> <!--updated to a coughing pic-->
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot"> <!--changed header color to purple, then back to carrot-->
